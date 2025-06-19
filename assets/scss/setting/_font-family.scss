@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/* font family */
+/* ============================================ */
+@mixin font_rokkitt{
+    font-family: "Rokkitt", serif;
+    font-weight: 200;
+    font-style: normal;
+}

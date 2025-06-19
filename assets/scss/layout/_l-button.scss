@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* l-button */
+/* ============================================ */
+.l-button{
+    background: #fff;
+    box-shadow: 0 0 vw(10) rgba(#aaa,.2);
+    border-radius: 50%;
+    height: vw(70);
+    width: vw(70);
+    position: fixed;
+    text-align: center;
+    right: vw(20);
+    top: vw(20);
+    transition: .3s;
+    z-index: 200;
+    @include media_sp {
+        box-shadow: 0 0 spvw(10) rgba(#aaa,.2);
+        height: spvw(70);
+        width: spvw(70);
+        right: spvw(15);
+        top: spvw(15);
+    }
+    &:hover{
+        background: #f1f1f1;
+    }
+    &__icon{
+        display: inline-block;
+        height: vw(14);
+        width: vw(30);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        @include media_sp {
+            height: spvw(14);
+            width: spvw(30);
+        }
+        span{
+            position: absolute;
+            left: 0;
+            background: $main-color;
+            display: inline-block;
+            height: vw(2);
+            width: vw(30);
+            @include media_sp {
+                height: spvw(2);
+                width: spvw(30);
+            }
+            &:nth-of-type(1){
+                top: 0;
+            }
+            &:nth-of-type(2){
+                bottom: 0;
+            }
+        }
+    }
+    &.is-open{
+        .l-button{
+            &__icon{
+                span{
+                    &:nth-of-type(1){
+                        animation: open-bar01 .5s forwards;
+                    }
+                    &:nth-of-type(2){
+                        animation: open-bar02 .5s forwards;
+                    }
+                }
+            }
+        }
+    }
+    &.is-close{
+        .l-button{
+            &__icon{
+                span{
+                    &:nth-of-type(1){
+                        animation: close-bar01 .5s forwards;
+                    }
+                    &:nth-of-type(2){
+                        animation: close-bar02 .5s forwards;
+                    }
+                }
+            }
+        }
+    }
+} //l-button

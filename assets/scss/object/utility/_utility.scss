@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* 調整用パーツ */
+/* ============================================ */
+/* media */
+.u-only-pc {
+	@media screen and (max-width: $breakpoint_sp) {
+		display: none;
+	}
+}
+.u-only-middle {
+	display: none;
+	@media screen and (max-width: $breakpoint_middle) {
+		display: block;
+	}
+}
+.u-only-sp {
+	display: none;
+	@media screen and (max-width: $breakpoint_sp) {
+		display: block;
+	}
+}
+
+/* text */
+.u-text-left{
+	text-align: left;
+}
+.u-text-right{
+	text-align: right;
+}
+.u-text-center{
+	text-align: center;
+}
+
+.u-text-color-red{
+	color: #D51A19;
+}

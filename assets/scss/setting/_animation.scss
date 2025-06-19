@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* animation */
+/* ============================================ */
+//l-button
+// @keyframes open-bar01 {
+//     0% { transform: translateY(0); }
+//     50% { transform: translateY(0.4285714285714286vw); }
+//     100% { transform: translateY(0.4285714285714286vw) rotate(35deg);}
+// }
+// @keyframes open-bar02 {
+//     0% { transform: translateY(0); }
+//     50% { transform: translateY(-0.4285714285714286vw); }
+//     100% { transform: translateY(-0.4285714285714286vw) rotate(-35deg); }
+// }
+// @keyframes close-bar01 {
+//     0% { transform: translateY(0.4285714285714286vw) rotate(35deg);}
+//     50% { transform: translateY(0.4285714285714286vw) rotate(0); }
+//     100% { transform: translateY(0) rotate(0); }
+// }
+// @keyframes close-bar02 {
+//     0% { transform: translateY(-0.4285714285714286vw) rotate(-35deg);}
+//     50% { transform: translateY(-0.4285714285714286vw) rotate(0); }
+//     100% { transform: translateY(0) rotate(0); }
+// }
+// @include media_sp {
+//     @keyframes open-bar01 {
+//         0% { transform: translateY(0); }
+//         50% { transform: translateY(1.171875vw); }
+//         100% { transform: translateY(1.171875vw) rotate(35deg);}
+//     }
+//     @keyframes open-bar02 {
+//         0% { transform: translateY(0); }
+//         50% { transform: translateY(-1.171875vw); }
+//         100% { transform: translateY(-1.171875vw) rotate(-35deg); }
+//     }
+//     @keyframes close-bar01 {
+//         0% { transform: translateY(1.171875vw) rotate(35deg);}
+//         50% { transform: translateY(1.171875vw) rotate(0); }
+//         100% { transform: translateY(0) rotate(0); }
+//     }
+//     @keyframes close-bar02 {
+//         0% { transform: translateY(-1.171875vw) rotate(-35deg);}
+//         50% { transform: translateY(-1.171875vw) rotate(0); }
+//         100% { transform: translateY(0) rotate(0); }
+//     }
+// }
+
+.js-kv,
+.js-fade{
+    opacity: 0;
+    transform: translate(0,5vw);
+    transition-delay: .5s;
+    transition: 1s;
+    &.is-active{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}

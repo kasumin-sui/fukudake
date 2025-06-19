@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* Font size */
+/* ============================================ */
+
+@function vw($pixelsVw) {
+  @return $pixelsVw / 1400 * 100vw;
+}
+
+@function middlevw($pixelsVw_middle) {
+  @return $pixelsVw_middle / 768 * 100vw;
+}
+
+@function spvw($pixelsVw_sp) {
+  @return $pixelsVw_sp / 480 * 100vw;
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+// デフォルト・設定
+@import "foundation/reset";
+@import "foundation/fonts";
+@import "foundation/base";
+
+// //変数$管理
+@import "setting/color";
+@import "setting/media-query";
+@import "setting/font-size";
+@import "setting/font-family";
+@import "setting/animation";
+
+// //　パーツ
+@import "object/utility/utility";
+// @import "object/component/c-heading";
+// @import "object/component/c-btn";
+
+// // 共通レイアウト
+@import "layout/l-header";
+@import "layout/l-footer";
+@import "layout/l-main";
+// @import "layout/l-button";
+// @import "layout/l-sitemap";
+// @import "layout/l-wrap";
+// @import "layout/l-inner";
+
+// javascript
+@import "javascript/splide-core";
+
+// ページ個別CSS
+@import "object/project/project.scss";

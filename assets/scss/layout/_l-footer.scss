@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* l-footer */
+/* ============================================ */
+.l-footer{
+    background: #fff;
+    padding: min(5.714vw,80px) min(1.428vw,20px);
+    margin-top: min(14.285vw,200px);
+    &__copy{
+        font-size: min(1vw,14px);
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 1;
+        @include media_sp {
+            font-size: 2.667vw;
+        }
+    }
+} //l-footer

@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@include media_middle {}
+@include media_sp {}
+
+
+/* l-header */
+/* ============================================ */
+.l-header{
+    position: absolute;
+    top: min(3.571vw,50px);
+    left: min(3.571vw,50px);
+    z-index: 10;
+    @include media_sp{
+        top: 3.906vw;
+        left: 3.906vw;
+    }
+    &__logo{
+        img{
+            width: min(17.857vw,250px);
+            @include media_sp{
+                width: 32.552vw;
+            }
+        }
+    }
+} //l-header

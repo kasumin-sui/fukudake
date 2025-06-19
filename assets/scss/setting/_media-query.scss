@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* Media Query */
+/* ============================================ */
+$breakpoint_min: 430px;
+$breakpoint_sp: 768px;
+$breakpoint_middle: 1000px;
+$breakpoint_pc: 1400px;
+
+@mixin media_pc {
+  @media print, screen and (max-width: $breakpoint_pc) {
+    @content;
+  }
+}
+@mixin media_middle {
+  @media screen and (max-width: $breakpoint_middle) {
+    @content;
+  }
+}
+@mixin media_sp{
+  @media screen and (max-width: $breakpoint_sp) {
+    @content;
+  }
+}
+
+
+@function vw($breakpoint_pc) {
+  @return $breakpoint_pc / $baseWidth * 100vw;
+}
+
+@function spvw($breakpoint_sp) {
+  @return $breakpoint_sp / $baseWidth * 100vw;
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.c-heading01{
+    font-size: vw(28);
+    font-weight: 500;
+    border-bottom: 1px solid $main-color;
+    padding-bottom: vw(15);
+    @include media_sp {
+        font-size: spvw(28);
+        padding-bottom: spvw(12);
+    }
+} //c-heading01
+
+
+.c-heading02{
+    font-size: vw(22);
+    font-weight: 500;
+    @include media_sp {
+        font-size: spvw(22);
+    }
+} //c-heading02
